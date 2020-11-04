@@ -539,3 +539,4 @@ Thumbs.db
 !/gradle/wrapper/gradle-wrapper.jar
 
 # End of https://www.toptal.com/developers/gitignore/api/intellij,intellij+iml,intellij+all,android,androidstudio,eclipse,java,kotlin,gradle
+/buildSrc/.gradle/
