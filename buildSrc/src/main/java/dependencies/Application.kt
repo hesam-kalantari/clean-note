@@ -1,7 +1,7 @@
 package dependencies
 
 object Application {
-    val id = "com.hesam.quorum.note"
-    val version_code = 1
-    val version_name = "1.0"
+    const val id = "com.hesam.quorum.note"
+    const val version_code = 1
+    const val version_name = "1.0"
 }

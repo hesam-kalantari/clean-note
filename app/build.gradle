@@ -10,15 +10,17 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
 android {
-    compileSdkVersion Versions.compilesdk
+    compileSdkVersion Versions.compile_sdk
     buildToolsVersion "29.0.3"
 
     defaultConfig {
         applicationId Application.id
-        minSdkVersion Versions.minsdk
-        targetSdkVersion Versions.targetsdk
+        minSdkVersion Versions.min_sdk
+        targetSdkVersion Versions.target_sdk
         versionCode Application.version_code
         versionName Application.version_name
+
+        vectorDrawables.useSupportLibrary = true
 
         testInstrumentationRunner AndroidTestDependencies.instrumentation_runner
     }
@@ -52,10 +54,10 @@ dependencies {
     implementation Dependencies.ktx
 
     //Support
-    implementation SupportDependencies.appcompat
-    implementation SupportDependencies.constraintlayout
+    implementation SupportDependencies.app_compat
+    implementation SupportDependencies.constraint_layout
     implementation SupportDependencies.material_design
     implementation SupportDependencies.swipe_refresh_layout
 
-
+    implementation Dependencies.timber
 }

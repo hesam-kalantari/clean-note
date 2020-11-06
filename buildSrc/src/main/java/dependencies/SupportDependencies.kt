@@ -2,9 +2,9 @@ package dependencies
 
 object SupportDependencies {
 
-    val appcompat = "androidx.appcompat:appcompat:${Versions.appcompat}"
-    val constraintlayout = "androidx.constraintlayout:constraintlayout:${Versions.constraintlayout}"
-    val material_design = "com.google.android.material:material:${Versions.material_design}"
-    val swipe_refresh_layout = "androidx.swiperefreshlayout:swiperefreshlayout:${Versions.swipe_refresh_layout}"
+    const val app_compat = "androidx.appcompat:appcompat:${Versions.app_compat}"
+    const val constraint_layout = "androidx.constraintlayout:constraintlayout:${Versions.constraint_layout}"
+    const val material_design = "com.google.android.material:material:${Versions.material_design}"
+    const val swipe_refresh_layout = "androidx.swiperefreshlayout:swiperefreshlayout:${Versions.swipe_refresh_layout}"
 
 }
