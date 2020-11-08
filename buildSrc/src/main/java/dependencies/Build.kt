@@ -6,4 +6,7 @@ object Build {
     const val google_services = "com.google.gms:google-services:${Versions.play_services}"
 //    val junit5 = "de.mannodermaus.gradle.plugins:android-junit5:1.3.2.0"
     const val crashlytics_gradle = "com.google.firebase:firebase-crashlytics-gradle:${Versions.crashlytics_gradle}"
+
+    const val spotless = "com.diffplug.spotless:spotless-plugin-gradle:${Versions.spotless}"
+    const val check_for_update = "com.github.ben-manes:gradle-versions-plugin:${Versions.check_for_update}"
 }

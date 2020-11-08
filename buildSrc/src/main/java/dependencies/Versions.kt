@@ -4,6 +4,7 @@ object Versions {
 
     const val androidx_test_ext = "1.1.1"
     const val app_compat = "1.3.0-alpha02"
+    const val check_for_update = "0.35.0"
     const val compile_sdk = 30
     const val constraint_layout = "2.0.4"
     const val coroutines_play_services = "1.3.2"
@@ -34,6 +35,7 @@ object Versions {
     const val play_services = "4.3.3"
     const val retrofit2 = "2.6.0"
     const val room = "2.1 .0"
+    const val spotless = "5.8.0"
     const val swipe_refresh_layout = "1.2.0-alpha01"
     const val target_sdk = 30
     const val test_core = "1.2.0"

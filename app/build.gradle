@@ -5,9 +5,10 @@ import dependencies.SupportDependencies
 import dependencies.Java
 import dependencies.AndroidTestDependencies
 
-apply plugin: 'com.android.application'
-apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-android-extensions'
+apply plugin: "com.android.application"
+apply plugin: "kotlin-android"
+//apply plugin: "kotlin-android-extensions"
+apply from: "$rootDir/spotless.gradle"
 
 android {
     compileSdkVersion Versions.compile_sdk
