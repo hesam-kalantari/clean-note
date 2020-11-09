@@ -1,5 +1,6 @@
 import dependencies.Versions
 import dependencies.Application
+import dependencies.AnnotationProcessing
 import dependencies.Dependencies
 import dependencies.SupportDependencies
 import dependencies.Java
@@ -7,7 +8,8 @@ import dependencies.AndroidTestDependencies
 
 apply plugin: "com.android.application"
 apply plugin: "kotlin-android"
-//apply plugin: "kotlin-android-extensions"
+apply plugin: "kotlin-android-extensions"
+apply plugin: 'kotlin-kapt'
 apply from: "$rootDir/spotless.gradle"
 
 android {
@@ -49,12 +51,24 @@ android {
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
 
-    //Kotlin
+    //kotlin
     implementation Dependencies.kotlin_standard_library
     implementation Dependencies.kotlin_reflect
     implementation Dependencies.ktx
 
-    //Support
+    //dependencies
+    implementation Dependencies.dagger
+
+    implementation Dependencies.firebase_analytics
+    implementation Dependencies.firebase_auth
+    implementation Dependencies.firebase_crashlytics
+    implementation Dependencies.firebase_firestore
+
+    //annotation processing
+    kapt AnnotationProcessing.dagger_compiler
+
+
+    //support
     implementation SupportDependencies.app_compat
     implementation SupportDependencies.constraint_layout
     implementation SupportDependencies.material_design
